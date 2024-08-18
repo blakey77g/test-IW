@@ -55,6 +55,4 @@ export class landingPage {
   }
 }
 
-
-
 export const onLandingPage = new landingPage();
