@@ -1,7 +1,6 @@
 const { onLoginPage } = require("../../support/pageObjects/loginPage");
 const { onLandingPage } = require("../../support/pageObjects/landingPage");
 
-
 describe("Login Tests", () => {
   beforeEach(() => {
     onLoginPage.goToHomepage();
@@ -20,7 +19,6 @@ describe("Login Tests", () => {
   it("Open then close Modal", () => {
     login();
     onLandingPage.selectStartFollowButton();
-    //Close Modal after opening
     onLandingPage.closeFollowWindow();
   });
 

@@ -21,12 +21,10 @@ export class landingPage {
 
   enterValidSearch(textEntered) {
     cy.get('[data-testid="globalSearch-input"]').type(textEntered);
-    //enterSearchText(textEntered);
   }
 
   enterInvaldSearch(textEntered) {
     cy.get('[data-testid="globalSearch-input"]').type(textEntered);
-    // enterSearchText(textEntered);
     cy.get('[class="NotFoundstyled__Text-sc-1qxw8dj-0 kngPDg"]')
       .should("contain", "Your search for")
       .should("contain", "did not match any documents.");
@@ -57,8 +55,6 @@ export class landingPage {
   }
 }
 
-// function enterSearchText(textEntered) {
-//   cy.get('[data-testid="globalSearch-input"]').type(textEntered);
-// }
+
 
 export const onLandingPage = new landingPage();
