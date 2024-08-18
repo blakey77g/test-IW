@@ -1,7 +1,7 @@
 const { onLoginPage } = require("../../support/pageObjects/loginPage");
 const { onLandingPage } = require("../../support/pageObjects/landingPage");
 
-describe("Login Tests", () => {
+describe("Tests for the With intelligence platform", () => {
   beforeEach(() => {
     onLoginPage.goToHomepage();
   });
