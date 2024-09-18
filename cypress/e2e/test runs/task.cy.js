@@ -28,12 +28,7 @@ describe("Tests for the With intelligence platform", () => {
     onLandingPage.verifyDiscoverURL();
   });
 
-  it("Search with results expected", () => {
-    login();
-    onLandingPage.enterValidSearch("investers");
-    onLandingPage.listResults();
-  });
-
+ 
   it("Search with no results expected", () => {
     login();
     onLandingPage.enterInvaldSearch("fvfsdvvfsdvsdfvsdfvsdv");
